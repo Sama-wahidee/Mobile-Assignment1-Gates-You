@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bground"
+    tools:context=".EandActivity">
+
+
+  <View
+      android:id="@+id/wire3"
+      android:layout_width="7dp"
+      android:layout_height="216dp"
+      android:layout_below="@id/andImage"
+      android:layout_alignParentStart="false"
+      android:layout_alignParentEnd="false"
+      android:layout_marginStart="218dp"
+      android:layout_marginTop="-376dp"
+      android:layout_marginEnd="70dp"
+      android:background="@android:color/black"
+      tools:ignore="MissingInflatedId" />
+
+  <View
+      android:id="@+id/wire2"
+      android:layout_width="8dp"
+      android:layout_height="210dp"
+      android:layout_below="@id/andImage"
+      android:layout_alignParentStart="false"
+      android:layout_alignParentEnd="false"
+      android:layout_marginStart="185dp"
+      android:layout_marginTop="-372dp"
+      android:layout_marginEnd="70dp"
+      android:background="@android:color/black"
+      tools:ignore="MissingInflatedId" />
+  <LinearLayout
+      android:id="@+id/switchesContainer"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:orientation="horizontal">
+
+    <!-- First Switch Image -->
+
+
+    <ImageView
+        android:id="@+id/switchImage1"
+        android:layout_width="203dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        android:src="@drawable/off"
+        android:importantForAccessibility="no" />
+    <!-- Second Switch Image -->
+
+    <ImageView
+        android:id="@+id/switchImage2"
+        android:layout_width="203dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="78dp"
+        android:clickable="true"
+        android:src="@drawable/off"
+        android:importantForAccessibility="no" />
+
+  </LinearLayout>
+
+
+
+  <ImageView
+      android:id="@+id/andImage"
+      android:layout_width="184dp"
+      android:layout_height="175dp"
+      android:layout_below="@id/switchesContainer"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="160dp"
+      android:layout_marginEnd="114dp"
+      android:rotation="90"
+      android:src="@drawable/xor"
+      tools:ignore="MissingInflatedId" />
+
+
+  <View
+      android:id="@+id/wire"
+      android:layout_width="8dp"
+      android:layout_height="81dp"
+      android:layout_below="@id/andImage"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="-14dp"
+      android:layout_marginEnd="70dp"
+      android:background="@android:color/black"
+      tools:ignore="MissingInflatedId" />
+
+  <!-- AND Gate TextView -->
+
+  <ImageView
+      android:id="@+id/lampImage"
+      android:layout_width="184dp"
+      android:layout_height="147dp"
+      android:layout_below="@id/andImage"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="64dp"
+      android:layout_marginEnd="113dp"
+      android:src="@drawable/onl"
+      tools:ignore="MissingInflatedId" />
+
+  <TextView
+      android:id="@+id/andGateTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/lampImage"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="16dp"
+      android:text="@string/xor_gate"
+      style="@style/GateDescriptionTextStyle"
+      android:textColor="#000000"
+      android:textSize="30sp" />
+
+</RelativeLayout>

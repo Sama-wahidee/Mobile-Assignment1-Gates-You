@@ -1,0 +1,91 @@
+<!-- activity_quiz.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        android:id="@+id/questionTextView"
+        style="@style/GateDescriptionTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:text="@string/quastion"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/dialogImageView"
+        android:layout_width="379dp"
+        android:layout_height="164dp"
+        android:layout_below="@id/questionTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/q1"
+        android:importantForAccessibility="no" />
+    <RadioGroup
+        android:id="@+id/answerRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/dialogImageView"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/answerRadioButton1"
+            style="@style/GateDescriptionTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero" />
+
+        <RadioButton
+            android:id="@+id/answerRadioButton2"
+            style="@style/GateDescriptionTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/one" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        style="@style/GateDescriptionTextStyle"
+        android:layout_below="@id/answerRadioGroup"
+        android:layout_marginTop="20dp"
+        android:background="#ff0000"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/correctAnswerTextView"
+        android:layout_width="150dp"
+        android:layout_height="147dp"
+        android:layout_below="@id/submitButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="119dp"
+        android:src="@drawable/correct"
+        android:visibility="gone"
+        android:importantForAccessibility="no" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="#ff0000"
+        style="@style/GateDescriptionTextStyle"
+        android:layout_below="@id/correctAnswerTextView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

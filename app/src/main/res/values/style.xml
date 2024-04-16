@@ -1,0 +1,21 @@
+<resources>
+    <style name="ItalicFontStyle">
+        <item name="android:fontFamily">@font/linotypedidotitalic</item>
+        <item name="android:textColor">@color/black</item>  </style>
+
+    <style name="ItalicBoldFontStyle">
+        <item name="android:fontFamily">@font/linotypedidotitalic</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">@color/black</item>  </style>
+
+    <style name="GateDescriptionTextStyle">
+        <item name="android:fontFamily">@font/linotypedidotitalic</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">@color/black</item>  </style>
+
+    <style name="learn">
+        <item name="android:fontFamily">@font/linotypedidotitalic</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>  </style>
+</resources>

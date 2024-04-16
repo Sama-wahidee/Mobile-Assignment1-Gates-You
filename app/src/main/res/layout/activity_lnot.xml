@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bground"
+    tools:context=".LnotActivity">
+
+    <!-- Not Image -->
+    <ImageView
+        android:id="@+id/notImage"
+        android:layout_width="326dp"
+        android:layout_height="255dp"
+        android:src="@drawable/not"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAccessibility="no" />
+
+    <!-- Title: Not Gate -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_gate"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        style="@style/GateDescriptionTextStyle"
+        app:layout_constraintTop_toBottomOf="@id/notImage"
+        app:layout_constraintStart_toStartOf="@id/notImage"
+        app:layout_constraintEnd_toEndOf="@id/notImage"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Truth Table -->
+    <TextView
+        android:id="@+id/truthTableTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/truth_table"
+        style="@style/GateDescriptionTextStyle"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="@id/notImage"
+        app:layout_constraintEnd_toEndOf="@id/notImage"
+        android:layout_marginTop="16dp"/>
+
+    <TableLayout
+        android:id="@+id/truthTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/notImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/notImage"
+        app:layout_constraintTop_toBottomOf="@id/truthTableTextView"
+        tools:ignore="MissingConstraints">
+
+
+    <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="@string/input_a"
+                android:textSize="18sp"
+                style="@style/GateDescriptionTextStyle"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="@string/output_y"
+                android:textSize="18sp"
+                style="@style/GateDescriptionTextStyle"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textSize="15sp"
+                style="@style/GateDescriptionTextStyle"
+                android:text="@string/_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textSize="15sp"
+                style="@style/GateDescriptionTextStyle"
+                android:text="@string/_0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textSize="15sp"
+                style="@style/GateDescriptionTextStyle"
+                android:text="@string/_0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textSize="15sp"
+                style="@style/GateDescriptionTextStyle"
+                android:text="@string/_1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Description Paragraph -->
+    <TextView
+        android:id="@+id/descriptionTextView"
+        style="@style/GateDescriptionTextStyle"
+        android:layout_width="371dp"
+        android:layout_height="343dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/not_gate_description_paragraph"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="@id/notImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/notImage"
+        app:layout_constraintTop_toBottomOf="@id/truthTable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

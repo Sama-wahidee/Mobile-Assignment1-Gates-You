@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bground"
+    tools:context=".MainActivity">
+
+
+
+    <View
+        android:id="@+id/wire2"
+        android:layout_width="14dp"
+        android:layout_height="151dp"
+        android:layout_below="@id/notImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-315dp"
+        android:layout_marginEnd="70dp"
+        android:background="@android:color/black"
+
+        tools:ignore="MissingInflatedId"
+    />
+
+    <ImageView
+        android:id="@+id/notImage"
+        android:layout_width="184dp"
+        android:layout_height="175dp"
+        android:layout_below="@id/switchImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="114dp"
+        android:rotation="90"
+        android:src="@drawable/not"
+        tools:ignore="MissingInflatedId"
+        android:importantForAccessibility="no" />
+
+
+    <View
+        android:id="@+id/wire"
+        android:layout_width="11dp"
+        android:layout_height="81dp"
+        android:layout_below="@id/notImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-17dp"
+        android:layout_marginEnd="70dp"
+        android:background="@android:color/black"
+        tools:ignore="MissingInflatedId"/>
+
+    <ImageView
+        android:id="@+id/lampImage"
+        android:layout_width="184dp"
+        android:layout_height="147dp"
+        android:layout_below="@id/notImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="118dp"
+        android:src="@drawable/onl"
+        tools:ignore="MissingInflatedId"
+        android:importantForAccessibility="no" />
+
+    <!-- NOT Gate TextView -->
+
+    <ImageView
+        android:id="@+id/switchImage"
+        android:layout_width="246dp"
+        android:layout_height="84dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="78dp"
+        android:clickable="true"
+        android:src="@drawable/off"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/notGateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lampImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/not_gate"
+        android:textColor="#000000"
+        style="@style/GateDescriptionTextStyle"
+        android:textSize="30sp" />
+</RelativeLayout>

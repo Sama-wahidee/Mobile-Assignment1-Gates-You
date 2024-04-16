@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bground"
+    tools:context=".ExploreActivity">
+
+    <!-- Top Gap -->
+    <Space
+        android:id="@+id/topGap"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="32dp" />
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/explore_with_logic_gates"
+        style="@style/GateDescriptionTextStyle"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/topGap"
+        app:layout_constraintStart_toEndOf="@id/iconImageView"
+        app:layout_constraintTop_toTopOf="@id/iconImageView"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/explore"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/topGap"
+        tools:layout_editor_absoluteX="0dp"
+        android:importantForAccessibility="no" />
+    <!-- First Image -->
+
+    <ImageView
+        android:id="@+id/not"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@drawable/not"
+        app:layout_constraintBottom_toTopOf="@id/notDescription"
+        app:layout_constraintEnd_toStartOf="@id/and"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iconImageView"
+        app:layout_constraintVertical_bias="0.2"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/notDescription"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_gate"
+        android:textSize="30sp"
+        style="@style/GateDescriptionTextStyle"
+        app:layout_constraintEnd_toEndOf="@id/not"
+        app:layout_constraintStart_toStartOf="@id/not"
+        app:layout_constraintTop_toBottomOf="@id/not" />
+
+    <!-- Second Image -->
+    <ImageView
+        android:id="@+id/and"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@drawable/and"
+        app:layout_constraintBottom_toTopOf="@id/andDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/not"
+        app:layout_constraintTop_toTopOf="@id/not"
+        style="@style/GateDescriptionTextStyle"
+        app:layout_constraintVertical_bias="0.2"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/andDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/and_gate"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@id/and"
+        style="@style/GateDescriptionTextStyle"
+        app:layout_constraintStart_toStartOf="@id/and"
+        app:layout_constraintTop_toBottomOf="@id/and" />
+
+    <!-- Gap between rows -->
+    <Space
+        android:id="@+id/rowGap"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@id/andDescription" />
+
+    <!-- Third Image -->
+    <ImageView
+        android:id="@+id/or"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/or"
+
+        app:layout_constraintBottom_toTopOf="@id/orDescription"
+        app:layout_constraintEnd_toStartOf="@id/xor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rowGap"
+        app:layout_constraintVertical_bias="0.2"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/orDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or_gate"
+        android:textSize="30sp"
+        style="@style/GateDescriptionTextStyle"
+
+        app:layout_constraintEnd_toEndOf="@id/or"
+        app:layout_constraintStart_toStartOf="@id/or"
+        app:layout_constraintTop_toBottomOf="@id/or" />
+
+    <!-- Fourth Image -->
+
+    <ImageView
+        android:id="@+id/xor"
+        android:layout_width="191dp"
+        android:layout_height="176dp"
+        android:src="@drawable/xor"
+        app:layout_constraintBottom_toTopOf="@id/xorDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/or"
+        app:layout_constraintTop_toTopOf="@id/or"
+        app:layout_constraintVertical_bias="0.2"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/xorDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/xor_gate"
+        android:textSize="30sp"
+        style="@style/GateDescriptionTextStyle"
+        app:layout_constraintEnd_toEndOf="@id/xor"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@id/xor"
+        app:layout_constraintTop_toBottomOf="@id/xor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

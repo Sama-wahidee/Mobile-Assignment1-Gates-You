@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="not_gate_description_paragraph">⭕ The NOT gate, also known as an inverter, is a digital logic gate that produces an output that is the inverse of its input.
+        \n⭕ It has only one input and one output.
+        \n⭕ When the input is LOW (0), the output is HIGH (1), and vice versa.
+        \n⭕ It is represented by the symbol \( \overline{A} \) or \( A\' \).
+        </string>
+    <string name="and_gate_description_paragraph">⭕ The AND gate is a digital logic gate that implements logical conjunction.
+        \n⭕ It behaves according to the truth table where the output is true only when both inputs are true.
+        \n⭕ It can be represented using the symbol \(&amp;\).</string>
+    <string name="or_gate_description_paragraph">⭕ The OR gate is a digital logic gate that performs a logical OR operation.
+       \n⭕ It has two or more inputs and one output.
+       \n⭕ The output of an OR gate is true if any of its inputs are true. Otherwise, the output is false.</string>
+    <string name="xor_gate_description_paragraph">⭕ The XOR gate (exclusive OR gate) is a digital logic gate that outputs true (1) only when the number of true inputs is odd.
+       \n⭕ It behaves according to the truth table:
+       \n⭕ The XOR gate is commonly used in various digital circuits, including adders, subtractors, and more.</string>
+    <string name="about_our_app">About Our App</string>
+    <string name="description">📖 This app is designed to help ninth grade students in technology learn about logic gates and their operations. It provides interactive simulations and quizzes to reinforce learning.</string>
+    <string name="myData">👩🏻‍🎓 Designed by: Sama Wahidee \nID: 1211503 \nCourse: Mobile software development(COMP4310)\nInstructor: Samer Zein \nSemester: Second Semester 2023/2024 \nCollege: Faculty Of Engineering And Technology \nMajor: Bachelor Program of Computer Science \nUniversity: Birzeit University</string>
+    <string name="and_gate">AND Gate</string>
+    <string name="not_gate">NOT Gate</string>
+    <string name="or_gate">OR Gate</string>
+    <string name="xor_gate">XOR Gate</string>
+    <string name="explore_with_logic_gates">Explore with logic gates</string>
+    <string name="truth_table">Truth Table:</string>
+    <string name="input_a">Input A</string>
+    <string name="input_b">Input B</string>
+    <string name="output_y">Output Y</string>
+    <string name="_0">0</string>
+    <string name="_1">1</string>
+    <string name="learn_about_logic_gates">Learn about logic gates</string>
+    <string name="quastion">What is the value of x in the following picture?</string>
+    <string name="zero">Zero</string>
+    <string name="one">One</string>
+    <string name="submit">Submit</string>
+    <string name="next">Next</string>
+    <string name="restart">Restart</string>
+    <string name="option">Option</string>
+
+</resources>
